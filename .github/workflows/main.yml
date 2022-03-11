@@ -7,15 +7,15 @@ jobs:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub! ok"
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
-      # - name: Initialize Python 3.7
-      # uses: actions/setup-python@v1
-      # with:
-      #   python-version: 3.8
-      # - name: Install dependencies
-      # run: |
-      #   python -m pip install --upgrade pip
-      #   pip install flake8
-      # - name: Lint with flake8
-      # run: |
-      #     flake8 .
-      # - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: Initialize Python 3.7
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.8
+      - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install flake8
+      - name: Lint with flake8
+      run: |
+          flake8 .
+      - run: echo "🍏 This job's status is ${{ job.status }}."
