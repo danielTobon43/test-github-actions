@@ -6,7 +6,7 @@ def sum(a, b):
 
 
 def main():
-    res = sum(5, 5)
+    res = sum(6, 5)
     print(f'The sum is {res}')
     
 
