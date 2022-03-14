@@ -4,7 +4,7 @@ def sum(a, b):
 
 def main():
     res = sum(5, 5)
-    print(f'The sum is {res}')
+    print(f"The sum is {res}")
 
 
 if __name__ == "__main__":
